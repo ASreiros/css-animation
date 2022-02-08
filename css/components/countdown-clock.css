@@ -8,11 +8,11 @@
 }
 
 
-.label {
+.labell {
     position: relative;
 }
 
-/* Sekundės */
+
 .csecond::before {
     content: '9';
     color: rgb(8, 236, 46);
@@ -174,7 +174,6 @@
     }
 }
 
-/* Minutės */
 
 .cminute::before {
     content: '7';
@@ -331,12 +330,12 @@
         content: '4';
     }
 
-    96.08 {
+    96.08% {
         content: '3';
     }
 }
 
-/* Valandos */
+
 
 .chour::before {
     content: '09';

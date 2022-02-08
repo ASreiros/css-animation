@@ -28,87 +28,6 @@
     ;
 }
 
-@keyframes seconds {
-    9.99% {
-        content: '9';
-    }
-
-    10% {
-        content: '8';
-    }
-
-    19.99% {
-        content: '8';
-    }
-
-    20% {
-        content: '7';
-    }
-
-    29.99% {
-        content: '7';
-    }
-
-    30% {
-        content: '6';
-    }
-
-    39.99% {
-        content: '6';
-    }
-
-    40% {
-        content: '5';
-    }
-
-    49.99% {
-        content: '5';
-    }
-
-    50% {
-        content: '4';
-    }
-
-    59.99% {
-        content: '4';
-    }
-
-    60% {
-        content: '3';
-    }
-
-    69.99% {
-        content: '3';
-    }
-
-    70% {
-        content: '2';
-    }
-
-    79.99% {
-        content: '2';
-    }
-
-    80% {
-        content: '1';
-    }
-
-    89.99% {
-        content: '1';
-    }
-
-    90% {
-        content: '0';
-    }
-
-    99.99% {
-        content: '0';
-    }
-
-    100% {
-        content: '9';
-    }
-}
 
 .cfsecond::after {
     content: '3';
@@ -124,57 +43,7 @@
     animation-timing-function: linear;
 }
 
-@keyframes secondT {
-    16.66% {
-        content: '3';
-    }
 
-    16.67% {
-        content: '2';
-    }
-
-    33.3% {
-        content: '2';
-    }
-
-    33.33% {
-        content: '1';
-    }
-
-    49.90% {
-        content: '1';
-    }
-
-    50% {
-        content: '0';
-    }
-
-    66.66% {
-        content: '0';
-    }
-
-    66.67% {
-        content: '5';
-    }
-
-    83.20% {
-        content: '5';
-    }
-
-    83.33% {
-        content: '4';
-    }
-
-    99.99% {
-        content: '4';
-    }
-
-    100% {
-        content: '3';
-    }
-}
-
-/* Minutės */
 
 .cfminute::before {
     content: '7';
