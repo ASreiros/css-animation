@@ -1,0 +1,746 @@
+.css-clock {
+    display: flex;
+    flex-direction: row;
+    color: rgb(8, 236, 46);
+    font-size: 50px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+.label {
+    position: relative;
+}
+
+/* Sekundės */
+.second::before {
+    content: '0';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 80px;
+    transform: translateX(-50%, -50%);
+    animation-name: seconds;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes seconds {
+    9.99% {
+        content: '0';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    19.99% {
+        content: '1';
+    }
+
+    20% {
+        content: '2';
+    }
+
+    29.99% {
+        content: '2';
+    }
+
+    30% {
+        content: '3';
+    }
+
+    39.99% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    49.99% {
+        content: '4';
+    }
+
+    50% {
+        content: '5';
+    }
+
+    59.99% {
+        content: '5';
+    }
+
+    60% {
+        content: '6';
+    }
+
+    69.99% {
+        content: '6';
+    }
+
+    70% {
+        content: '7';
+    }
+
+    79.99% {
+        content: '7';
+    }
+
+    80% {
+        content: '8';
+    }
+
+    89.99% {
+        content: '8';
+    }
+
+    90% {
+        content: '9';
+    }
+
+    99.99% {
+        content: '9';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+.second::after {
+    content: '0';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    transform: translateX(-50%, -50%);
+    animation-name: secondT;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes secondT {
+    16.66% {
+        content: '0';
+    }
+
+    16.67% {
+        content: '1';
+    }
+
+    33.3% {
+        content: '1';
+    }
+
+    33.33% {
+        content: '2';
+    }
+
+    49.90% {
+        content: '2';
+    }
+
+    50% {
+        content: '3';
+    }
+
+    66.66% {
+        content: '3';
+    }
+
+    66.67% {
+        content: '4';
+    }
+
+    83.20% {
+        content: '4';
+    }
+
+    83.33% {
+        content: '5';
+    }
+
+    99.99% {
+        content: '5';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+/* Minutės */
+
+.minute::before {
+    content: '0';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 80px;
+    transform: translateX(-50%, -50%);
+    animation-name: minutes;
+    animation-duration: 600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes minutes {
+    9.99% {
+        content: '0';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    19.99% {
+        content: '1';
+    }
+
+    20% {
+        content: '2';
+    }
+
+    29.99% {
+        content: '2';
+    }
+
+    30% {
+        content: '3';
+    }
+
+    39.99% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    49.99% {
+        content: '4';
+    }
+
+    50% {
+        content: '5';
+    }
+
+    59.99% {
+        content: '5';
+    }
+
+    60% {
+        content: '6';
+    }
+
+    69.99% {
+        content: '6';
+    }
+
+    70% {
+        content: '7';
+    }
+
+    79.99% {
+        content: '7';
+    }
+
+    80% {
+        content: '8';
+    }
+
+    89.99% {
+        content: '8';
+    }
+
+    90% {
+        content: '9';
+    }
+
+    99.99% {
+        content: '9';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+.minute::after {
+    content: '0';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    transform: translateX(-50%, -50%);
+    animation-name: minuteT;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes minuteT {
+    16.66% {
+        content: '0';
+    }
+
+    16.67% {
+        content: '1';
+    }
+
+    33.32% {
+        content: '1';
+    }
+
+    33.33% {
+        content: '2';
+    }
+
+    49.99% {
+        content: '2';
+    }
+
+    50% {
+        content: '3';
+    }
+
+    66.66% {
+        content: '3';
+    }
+
+    66.67% {
+        content: '4';
+    }
+
+    83.30% {
+        content: '4';
+    }
+
+    83.33% {
+        content: '5';
+    }
+
+    99.99% {
+        content: '5';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+/* Valandos */
+
+.hour::before {
+    content: '00';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    transform: translateX(-50%, -50%);
+    animation-name: hours;
+    animation-duration: 86400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hours {
+    4.166% {
+        content: '00';
+    }
+
+    4.167% {
+        content: '01';
+    }
+
+    8.332% {
+        content: '01';
+    }
+
+    8.333% {
+        content: '02';
+    }
+
+    12.499% {
+        content: '02';
+    }
+
+    12.5% {
+        content: '03';
+    }
+
+    16.666% {
+        content: '03';
+    }
+
+    16.667% {
+        content: '04';
+    }
+
+    20.832% {
+        content: '04';
+    }
+
+    20.833% {
+        content: '05';
+    }
+
+    24.999% {
+        content: '05';
+    }
+
+    25% {
+        content: '06';
+    }
+
+    29.166% {
+        content: '06';
+    }
+
+    29.167% {
+        content: '07';
+    }
+
+    33.332% {
+        content: '07';
+    }
+
+    33.333% {
+        content: '08';
+    }
+
+    37.499% {
+        content: '08';
+    }
+
+    37.5% {
+        content: '09';
+    }
+
+    41.666% {
+        content: '09';
+    }
+
+    41.667% {
+        content: '10';
+    }
+
+    45.832% {
+        content: '10';
+    }
+
+    45.833% {
+        content: '11';
+    }
+
+    49.999% {
+        content: '11';
+    }
+
+    50% {
+        content: '12';
+    }
+
+    54.166% {
+        content: '12';
+    }
+
+    54.167% {
+        content: '13';
+    }
+
+    58.332% {
+        content: '13';
+    }
+
+    58.333% {
+        content: '14';
+    }
+
+    62.499% {
+        content: '14';
+    }
+
+    62.5% {
+        content: '15';
+    }
+
+    66.666% {
+        content: '15';
+    }
+
+    66.667% {
+        content: '16';
+    }
+
+    70.832% {
+        content: '16';
+    }
+
+    70.833% {
+        content: '17';
+    }
+
+    74.999% {
+        content: '17';
+    }
+
+    75% {
+        content: '18';
+    }
+
+    79.166% {
+        content: '18';
+    }
+
+    79.167% {
+        content: '19';
+    }
+
+    83.332% {
+        content: '19';
+    }
+
+    83.333% {
+        content: '20';
+    }
+    87.499% {
+        content: '20';
+    }
+    87.5% {
+        content: '21';
+    }
+    91.666% {
+        content: '21';
+    }
+    91.667% {
+        content: '22';
+    }
+    95.832% {
+        content: '22';
+    }
+    91.667% {
+        content: '22';
+    }
+    95.832% {
+        content: '22';
+    }
+    95.833% {
+        content: '23';
+    }
+    99.999% {
+        content: '00';
+    }
+}
+
+
+
+
+/* Dienos */
+
+.day::before {
+    content: '0';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    transform: translateX(-50%, -50%);
+    animation-name: days;
+    animation-duration: 864000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes days {
+    9.99% {
+        content: '0';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    19.99% {
+        content: '1';
+    }
+
+    20% {
+        content: '2';
+    }
+
+    29.99% {
+        content: '2';
+    }
+
+    30% {
+        content: '3';
+    }
+
+    39.99% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    49.99% {
+        content: '4';
+    }
+
+    50% {
+        content: '5';
+    }
+
+    59.99% {
+        content: '5';
+    }
+
+    60% {
+        content: '6';
+    }
+
+    69.99% {
+        content: '6';
+    }
+
+    70% {
+        content: '7';
+    }
+
+    79.99% {
+        content: '7';
+    }
+
+    80% {
+        content: '8';
+    }
+
+    89.99% {
+        content: '8';
+    }
+
+    90% {
+        content: '9';
+    }
+
+    99.99% {
+        content: '9';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+.day::after {
+    content: '0';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    transform: translateX(-50%, -50%);
+    animation-name: dayT;
+    animation-duration: 8640000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dayT {
+    9.99% {
+        content: '0';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    19.99% {
+        content: '1';
+    }
+
+    20% {
+        content: '2';
+    }
+
+    29.99% {
+        content: '2';
+    }
+
+    30% {
+        content: '3';
+    }
+
+    39.99% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    49.99% {
+        content: '4';
+    }
+
+    50% {
+        content: '5';
+    }
+
+    59.99% {
+        content: '5';
+    }
+
+    60% {
+        content: '6';
+    }
+
+    69.99% {
+        content: '6';
+    }
+
+    70% {
+        content: '7';
+    }
+
+    79.99% {
+        content: '7';
+    }
+
+    80% {
+        content: '8';
+    }
+
+    89.99% {
+        content: '8';
+    }
+
+    90% {
+        content: '9';
+    }
+
+    99.99% {
+        content: '9';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+
+@media(max-width:1200px)  {
+    .css-clock {
+        font-size: 25px;
+    }   
+    
+}

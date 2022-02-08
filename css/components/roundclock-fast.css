@@ -1,0 +1,87 @@
+
+.clock-container > .dos {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color:blanchedalmond;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.dos > .hand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 150px;
+    transform-origin: center 0;
+    display: block;
+
+}
+
+.dos > .second-hand {
+    width: 5px;
+    height: 140px;
+    background-color: aqua;
+    animation-name: handmotion;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.dos > .minute-hand {
+    width: 5px;
+    height: 90px;
+    background-color: blue;
+    animation-name: handmotion;
+    animation-duration: 36s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.dos > .hour-hand {
+    width: 5px;
+    height: 70px;
+    background-color: red;
+    animation-name: handmotion;
+    animation-duration: 432s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes handmotion {
+    from { transform: rotate(0); }
+    to { transform: rotate(1turn); }
+}
+
+.dos > .n{
+    position: absolute;
+    color: green;
+    background-color: gold;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 20px;
+    line-height: 20px;
+    transform: rotate(180deg);
+}
+
+.dos > .n12{
+    bottom:0;
+    left: calc(50% - 10px)
+}
+
+.dos > .n6{
+    top:0;
+    left: calc(50% - 5px)
+}
+
+.dos > .n3{
+    top:50%;
+    left: 0%;
+}
+
+.dos > .n9{
+    top:50%;
+    right: 0%;
+}

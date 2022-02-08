@@ -1,0 +1,73 @@
+/* base */
+@import '../base/base.css';
+@import '../base/layout.css';
+
+/* components */
+@import '../components/clock.css';
+@import '../components/clock-fast.css';
+@import "../components/roundclock.css";
+@import "../components/roundclock-fast.css";
+@import "../components/battery.css";
+
+
+.top{
+    background-image: url(../../img/backgroundred.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 200px;
+}
+h1{
+    color: rgb(2, 56, 2);
+    font-size: 90px;
+    text-transform: uppercase;    
+}
+
+h2{
+    color: rgb(2, 56, 2);
+    font-size: 70px;
+    text-transform: uppercase;    
+}
+.middle{
+    background-image: url(../../img/background3.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bottom{
+    background-image: url(../../img/mashinery.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;   
+}
+
+.bottom > h2{
+    color: red;
+}
+
+
+
+
+
