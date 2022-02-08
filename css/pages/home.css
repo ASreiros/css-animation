@@ -8,7 +8,8 @@
 @import "../components/roundclock.css";
 @import "../components/roundclock-fast.css";
 @import "../components/battery.css";
-
+@import "../components/countdown-clock.css";
+@import "../components/countdown-clock-fast.css";
 
 .top{
     background-image: url(../../img/backgroundred.jpg);
@@ -33,6 +34,24 @@ h2{
     color: rgb(2, 56, 2);
     font-size: 70px;
     text-transform: uppercase;    
+}
+
+.almost-top{
+    background-image: url(../../img/sunsetpainting.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 200px;
+}
+
+.almost-top > h2{
+    color: rgb(5, 114, 5);  
 }
 .middle{
     background-image: url(../../img/background3.jpg);

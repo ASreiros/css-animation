@@ -1,0 +1,757 @@
+.countdown-clock {
+    display: flex;
+    flex-direction: row;
+    color: rgb(8, 236, 46);
+    font-size: 50px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+.label {
+    position: relative;
+}
+
+/* Sekundės */
+.csecond::before {
+    content: '9';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 80px;
+    transform: translateX(-50%, -50%);
+    animation-name: cseconds;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    ;
+}
+
+@keyframes cseconds {
+    9.99% {
+        content: '9';
+    }
+
+    10% {
+        content: '8';
+    }
+
+    19.99% {
+        content: '8';
+    }
+
+    20% {
+        content: '7';
+    }
+
+    29.99% {
+        content: '7';
+    }
+
+    30% {
+        content: '6';
+    }
+
+    39.99% {
+        content: '6';
+    }
+
+    40% {
+        content: '5';
+    }
+
+    49.99% {
+        content: '5';
+    }
+
+    50% {
+        content: '4';
+    }
+
+    59.99% {
+        content: '4';
+    }
+
+    60% {
+        content: '3';
+    }
+
+    69.99% {
+        content: '3';
+    }
+
+    70% {
+        content: '2';
+    }
+
+    79.99% {
+        content: '2';
+    }
+
+    80% {
+        content: '1';
+    }
+
+    89.99% {
+        content: '1';
+    }
+
+    90% {
+        content: '0';
+    }
+
+    99.99% {
+        content: '0';
+    }
+
+    100% {
+        content: '9';
+    }
+}
+
+.csecond::after {
+    content: '3';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    transform: translateX(-50%, -50%);
+    animation-name: csecondT;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes csecondT {
+    16.66% {
+        content: '3';
+    }
+
+    16.67% {
+        content: '2';
+    }
+
+    33.3% {
+        content: '2';
+    }
+
+    33.33% {
+        content: '1';
+    }
+
+    49.90% {
+        content: '1';
+    }
+
+    50% {
+        content: '0';
+    }
+
+    66.66% {
+        content: '0';
+    }
+
+    66.67% {
+        content: '5';
+    }
+
+    83.20% {
+        content: '5';
+    }
+
+    83.33% {
+        content: '4';
+    }
+
+    99.99% {
+        content: '4';
+    }
+
+    100% {
+        content: '3';
+    }
+}
+
+/* Minutės */
+
+.cminute::before {
+    content: '7';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 80px;
+    transform: translateX(-50%, -50%);
+    animation-name: minutesc;
+    animation-duration: 600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes minutesc {
+    6.56% {
+        content: '7';
+    }
+
+   6.57% {
+        content: '6';
+    }
+
+    16.56% {
+        content: '6';
+    }
+
+    16.57% {
+        content: '5';
+    }
+
+   26.56% {
+        content: '5';
+    }
+
+    26.57% {
+        content: '4';
+    }
+
+    36.56% {
+        content: '4';
+    }
+
+    36.57% {
+        content: '3';
+    }
+
+    46.56% {
+        content: '3';
+    }
+
+    46.57% {
+        content: '2';
+    }
+
+    56.56% {
+        content: '2';
+    }
+
+    56.57% {
+        content: '1';
+    }
+
+    66.56% {
+        content: '1';
+    }
+
+    66.57% {
+        content: '0';
+    }
+
+   76.56% {
+        content: '0';
+    }
+
+    76.57% {
+        content: '9';
+    }
+
+    86.56% {
+        content: '9';
+    }
+
+    86.57% {
+        content: '8';
+    }
+
+   96.56% {
+        content: '8';
+    }
+
+    96.57% {
+        content: '7';
+    }
+}
+
+.cminute::after {
+    content: '3';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    transform: translateX(-50%, -50%);
+    animation-name: cminuteT;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cminuteT {
+    12.74% {
+        content: '3';
+    }
+
+    12.75% {
+        content: '2';
+    }
+
+    29.39% {
+        content: '2';
+    }
+
+    29.40% {
+        content: '1';
+    }
+
+    46.07% {
+        content: '1';
+    }
+
+    46.08% {
+        content: '0';
+    }
+
+    62.74% {
+        content: '0';
+    }
+
+    62.75% {
+        content: '5';
+    }
+
+    79.40% {
+        content: '5';
+    }
+
+    79.41% {
+        content: '4';
+    }
+
+    96.07% {
+        content: '4';
+    }
+
+    96.08 {
+        content: '3';
+    }
+}
+
+/* Valandos */
+
+.chour::before {
+    content: '09';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    transform: translateX(-50%, -50%);
+    animation-name: chours;
+    animation-duration: 86400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes chours {
+    2.61% {
+        content: '09';
+    }
+
+    2.62% {
+        content: '08';
+    }
+
+    6.77% {
+        content: '08';
+    }
+
+    6.78% {
+        content: '07';
+    }
+
+    10.94% {
+        content: '07';
+    }
+
+    10.95% {
+        content: '06';
+    }
+
+    15.11% {
+        content: '06';
+    }
+
+    15.12% {
+        content: '05';
+    }
+
+    19.27% {
+        content: '05';
+    }
+
+    19.28% {
+        content: '04';
+    }
+
+    23.44% {
+        content: '04';
+    }
+
+    23.45% {
+        content: '03';
+    }
+
+    27.61% {
+        content: '03';
+    }
+
+    27.62% {
+        content: '02';
+    }
+
+    31.77% {
+        content: '02';
+    }
+
+    31.78% {
+        content: '01';
+    }
+
+    35.94% {
+        content: '01';
+    }
+
+    35.95% {
+        content: '00';
+    }
+
+    40.11% {
+        content: '00';
+    }
+
+    40.12% {
+        content: '23';
+    }
+
+    44.27% {
+        content: '23';
+    }
+
+    44.28% {
+        content: '22';
+    }
+
+    48.44% {
+        content: '22';
+    }
+
+    48.45% {
+        content: '21';
+    }
+
+    52.61% {
+        content: '21';
+    }
+
+    52.62% {
+        content: '20';
+    }
+
+    56.77% {
+        content: '20';
+    }
+
+    56.78% {
+        content: '19';
+    }
+
+    60.94% {
+        content: '19';
+    }
+
+    60.95% {
+        content: '18';
+    }
+
+    65.11% {
+        content: '18';
+    }
+
+    65.12% {
+        content: '17';
+    }
+
+    69.27% {
+        content: '17';
+    }
+
+    69.28% {
+        content: '16';
+    }
+
+    73.44% {
+        content: '16';
+    }
+
+    73.45% {
+        content: '15';
+    }
+
+    77.61% {
+        content: '15';
+    }
+
+    77.62% {
+        content: '14';
+    }
+
+    81.77% {
+        content: '14';
+    }
+
+    81.78% {
+        content: '13';
+    }
+   85.94% {
+        content: '13';
+    }
+    85.95% {
+        content: '12';
+    }
+   90.11% {
+        content: '12';
+    }
+    90.12% {
+        content: '11';
+    }
+  
+    94.27% {
+        content: '11';
+    }
+    94.28% {
+        content: '10';
+    }
+    98.44% {
+        content: '10';
+    }
+    98.45% {
+        content: '09';
+    }
+}
+
+
+
+/* 
+
+
+.cday::before {
+    content: '2';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    transform: translateX(-50%, -50%);
+    animation-name: days;
+    animation-duration: 864000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes days {
+    9.99% {
+        content: '0';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    19.99% {
+        content: '1';
+    }
+
+    20% {
+        content: '2';
+    }
+
+    29.99% {
+        content: '2';
+    }
+
+    30% {
+        content: '3';
+    }
+
+    39.99% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    49.99% {
+        content: '4';
+    }
+
+    50% {
+        content: '5';
+    }
+
+    59.99% {
+        content: '5';
+    }
+
+    60% {
+        content: '6';
+    }
+
+    69.99% {
+        content: '6';
+    }
+
+    70% {
+        content: '7';
+    }
+
+    79.99% {
+        content: '7';
+    }
+
+    80% {
+        content: '8';
+    }
+
+    89.99% {
+        content: '8';
+    }
+
+    90% {
+        content: '9';
+    }
+
+    99.99% {
+        content: '9';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+.cday::after {
+    content: '3';
+    color: rgb(8, 236, 46);
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    transform: translateX(-50%, -50%);
+    animation-name: dayT;
+    animation-duration: 8640000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.lastday::after{
+        content: '4';
+        color: rgb(8, 236, 46);
+        display: block;
+        position: absolute;
+        top: -70px;
+        left: -10px;
+        transform: translateX(-50%, -50%);
+        animation
+}
+
+@keyframes dayT {
+    9.99% {
+        content: '0';
+    }
+
+    10% {
+        content: '1';
+    }
+
+    19.99% {
+        content: '1';
+    }
+
+    20% {
+        content: '2';
+    }
+
+    29.99% {
+        content: '2';
+    }
+
+    30% {
+        content: '3';
+    }
+
+    39.99% {
+        content: '3';
+    }
+
+    40% {
+        content: '4';
+    }
+
+    49.99% {
+        content: '4';
+    }
+
+    50% {
+        content: '5';
+    }
+
+    59.99% {
+        content: '5';
+    }
+
+    60% {
+        content: '6';
+    }
+
+    69.99% {
+        content: '6';
+    }
+
+    70% {
+        content: '7';
+    }
+
+    79.99% {
+        content: '7';
+    }
+
+    80% {
+        content: '8';
+    }
+
+    89.99% {
+        content: '8';
+    }
+
+    90% {
+        content: '9';
+    }
+
+    99.99% {
+        content: '9';
+    }
+
+    100% {
+        content: '0';
+    }
+}
+
+
+@media(max-width:1200px)  {
+    .countdown-clock {
+        font-size: 25px;
+    }   
+    
+} */

@@ -87,7 +87,7 @@ justify-content: space-between;
 
 .cell-one{
     animation-name: charge1;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -114,7 +114,7 @@ justify-content: space-between;
 }
 .cell-two{
     animation-name: charge2;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -142,7 +142,7 @@ justify-content: space-between;
 
 .cell-three{
     animation-name: charge3;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -170,7 +170,7 @@ justify-content: space-between;
 
 .cell-four{
     animation-name: charge4;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -198,7 +198,7 @@ justify-content: space-between;
 
 .cell-five{
     animation-name: charge5;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
